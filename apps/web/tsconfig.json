@@ -1,6 +1,10 @@
 {
   "extends": "@repo/typescript-config/nextjs.json",
   "compilerOptions": {
+    "baseUrl": ".",  // This makes the paths relative to the root of the project
+    "paths": {
+      "@/*": ["./src/*"]  // Alias '@/' points to the src folder
+    },
     "plugins": [
       {
         "name": "next"
