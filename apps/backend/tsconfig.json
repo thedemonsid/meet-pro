@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                    // Target modern JavaScript
+    "module": "NodeNext",                  // Use Node.js module resolution (for ESM support)
+    "moduleResolution": "NodeNext",        // Resolve modules the NodeNext way
+    "declaration": true,                   // Generate .d.ts files for type declarations
+    "declarationMap": true,                // Source maps for declarations
+    "esModuleInterop": true,               // Interoperability with CommonJS
+    "isolatedModules": true,               // Ensures that each file can be treated as its own module
+    "strict": true,                        // Enable strict type-checking
+    "baseUrl": ".",                        // Base URL for resolving non-relative module names
+    "paths": {
+      "@/*": ["./src/*"]                   // Optional: If you want path aliases for imports
+    },
+    "resolveJsonModule": true,             // Import JSON files as modules
+    "skipLibCheck": true,                  // Skip checking of declaration files (for faster builds)
+    "lib": ["ES2022"],                     // Standard library to include
+    "noUncheckedIndexedAccess": true       // Type-safe indexed access
+  },
+  "include": [
+    "src/**/*.ts",                         // Include all TypeScript files in src
+    "src/**/*.tsx"                         // Include if you use .tsx for any reason (usually in frontends)
+  ],
+  "exclude": ["node_modules"]              // Exclude node_modules for obvious reasons
+}
