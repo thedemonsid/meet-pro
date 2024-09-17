@@ -1,5 +1,5 @@
 import React from "react";
-import { MeetingPageComponent } from "@/components/meeting-page";
+import { MeetingPageComponent } from "@/app/room/_components/meeting-page";
 const Meeting = () => {
   return <MeetingPageComponent></MeetingPageComponent>;
 };
